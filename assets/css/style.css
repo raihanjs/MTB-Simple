@@ -1,0 +1,203 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li {
+  margin-bottom: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(71, 184, 184) !important;
+}
+
+:root {
+  --green-primary: #08974a;
+  --green-secondary: #7dc777;
+  --light-green: #dff1e5;
+  --red--primary: #ff0000;
+  --white: #ffffff;
+}
+
+.bg-green-primary {
+  background-color: var(--green-primary);
+}
+
+/* Header part */
+.header {
+  background-color: var(--green-primary);
+}
+
+.header .nav-link {
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .header .nav-link {
+    font-size: 16px;
+  }
+}
+/* Breadcrumb */
+.breadcrumb-nav {
+  background-color: var(--light-green);
+}
+.breadcrumb-nav .breadcrumb-item a {
+  color: var(--green-primary) !important;
+}
+/* =================================Home Page================================= */
+/* Ticker part */
+.ticker {
+  background-color: var(--light-green);
+  border-color: var(--green-primary) !important;
+}
+.ticker div {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+/* Hero */
+.hero {
+  background-color: var(--light-green);
+}
+.hero .carousel-indicators {
+  top: 105%;
+}
+.hero .carousel-indicators button {
+  background-color: var(--green-primary) !important;
+}
+.hero .card {
+  transition: all linear 0.3s;
+  background-color: var(--green-secondary);
+}
+
+.hero .card:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Investment */
+.investment {
+  background-color: var(--green-secondary);
+}
+.investment .card {
+  transition: all linear 0.1s;
+}
+.investment .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 2px var(--light-green);
+}
+.investment .card .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(48, 48, 48, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+.investment .card .card-overlay a {
+  border: 1px solid;
+  border-radius: 20px;
+}
+.investment .card:hover .card-overlay {
+  opacity: 1;
+}
+.investment .card .card-overlay:hover a {
+  color: var(--white) !important;
+  border-color: var(--green-primary);
+  background-color: var(--green-primary);
+}
+.investment .owl-stage-outer {
+  z-index: -1 !important;
+}
+.investment .owl-nav {
+  z-index: 999 !important;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.investment .owl-nav .owl-prev i,
+.investment .owl-nav .owl-next i {
+  border-radius: 5px;
+  padding: 14px 18px !important;
+  background: #d6d6d6 !important;
+}
+
+.investment .owl-nav .owl-prev:hover i,
+.investment .owl-nav .owl-next:hover i {
+  background-color: #869791 !important;
+  color: var(--white);
+}
+
+/* Why Us */
+.why-us .box .box-icon {
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(231, 241, 255, 0.3);
+}
+.why-us .box .box-text {
+  height: 220px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: rgba(231, 241, 255, 0.3);
+}
+.why-us .box:hover .box-icon {
+  transition: all linear 0.3s;
+  background-color: var(--green-primary);
+}
+.why-us .box:hover .box-text {
+  transition: all linear 0.3s;
+  background-color: var(--green-primary);
+}
+.why-us .box:hover .box-icon i {
+  color: var(--white) !important;
+}
+.why-us .box:hover .box-text p {
+  color: var(--white) !important;
+}
+/* =================================Circular Page================================= */
+/* =================================Guidelines Page================================= */
+/* =================================FAQ Page================================= */
+.faq-page ul li {
+  list-style-type: circle;
+}
+/* =================================Help Desk Page================================= */
+.table thead th {
+  background-color: #568565;
+  color: white;
+  text-align: center;
+}
+
+/* .table tbody tr:nth-child(odd) {
+  background-color: #e6f2e6 !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: white !important;
+} */
+
+.table tbody tr td {
+  border: 1px solid #d6d6d6;
+}
